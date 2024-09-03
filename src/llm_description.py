@@ -1,6 +1,6 @@
 import google.generativeai as genai
 
-genai.configure(api_key="AIzaSyAx5ivzLvAFNQMYliCBF3zvSuOWFoONc_A")
+genai.configure(api_key=process.env.GEMINI_API)
 
 
 def generate_description(dataset, commodity):
